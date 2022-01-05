@@ -23,9 +23,6 @@ body {
 }
 
 
-.header {
-     
-}
 
 .header-container {
    background: url("./assets/img/header-bg.jpg");
@@ -39,6 +36,13 @@ body {
    background-repeat: no-repeat;
    
  }
+
+ .contacts-container {
+  background-image: url("./assets/img/contacts.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;
+  
+}
 
  .skills-container {
   background-color: #0b0c0a;
@@ -75,6 +79,17 @@ html {
    list-style: none;
    margin-left: auto
 }
+
+.price {
+  display: flex;
+   justify-content:  space-around;
+   align-items: center;
+   list-style: none;
+   margin-left: auto;
+}
+
+
+
 .nav-list {
    display: flex;
    justify-content: flex-end;
@@ -114,5 +129,7 @@ html {
    list-style: none;
    margin-left: auto
 }
+
+
  
   
