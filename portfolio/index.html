@@ -7,72 +7,86 @@
    <title>portfolio</title>
    <link rel="stylesheet" href="style.css">
    <link rel="icon" href="assets/favicon.ico">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
 <header class="header">
-<div class="container">
-  <img class="logo" src="./assets/svg/logo.svg" alt="logo">
-  <nav class="nav">
-    <ul class="nav-list">
-       <li class="nav-item"><a href="#skills" class="nav-link">Skills </a></li>
-       <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio </a></li>
-       <li class="nav-item"><a href="#video" class="nav-link">Video </a></li>
-       <li class="nav-item"><a href="#price" class="nav-link">Price </a></li>
-       <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li> 
-    </ul>
-  </nav>
-</div>
+  <div class="container containerHeader">
+    <img class="logo" src="./assets/svg/logo.svg" alt="logo">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills </a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio </a></li>
+          <li class="nav-item"><a href="#video" class="nav-link">Video </a></li>
+          <li class="nav-item"><a href="#price" class="nav-link">Price </a></li>
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li> 
+        </ul>
+      </nav>
+      <img src="./assets/svg/switch-lng.svg" alt="switch-lng" id="logo">
+  </div>
 </header>
 
 <main class="main">
-<div class="container">
-  
-  <div class="section" id="hero">
-    <h1>Alexa Rise</h1>
-  </div>
-<div>
-  Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise
-  </div>
-  <button>Hire me</button>
 
+  <div class="container hero-container">
+    
+    <div class="section hero" id="hero">
 
-  <div class="section" id="skills">
+     <h1>Alexa Rise</h1>
+    <div class="hero-text"> Save sincere emotions, romantic feelings and happy moments of life together
+   with professional photographer Alexa Rise
+  </div>
+
+  <button class="button-gold">Hire me</button>
+
+ </div>
+</div>
+
+  <div class="section container" id="skills">
     <h2 class="section-title">skills</h2>
+    <div class="skills-item">
     <div class="skill-item">
-    <div>
-      <img class="camera" src="./assets/svg/camera 1.svg" alt="camera">
+      <!-- <img class="camera" src="./assets/svg/camera 1.svg" alt="camera"> -->
       <div> Digital photography </div>
       <div> High-quality photos in the studio and on the nature </div>
     </div>
 
-    <div>
-      <img class="video" src="./assets/svg/video 1.svg" alt="video">
+    <div class="skill-item">
+      <!-- <img class="video" src="./assets/svg/video 1.svg" alt="video"> -->
       <div> Video shooting </div>
       <div> Capture your moments so that they always stay with you </div>
     </div>
 
-    <div>
-      <img class="image" src="./assets/svg/image 1.svg" alt="image">
+    <div class="skill-item">
+      <!-- <img class="image" src="./assets/svg/image 1.svg" alt="image"> -->
       <div> Retouch </div>
       <div> I strive to make photography surpass reality </div>
     </div>
 
-    <div>
-      <img class="mic" src="./assets/svg/mic 1.svg" alt="mic">
+    <div class="skill-item">
+      <!-- <img class="mic" src="./assets/svg/mic 1.svg" alt="mic"> -->
       <div> Audio </div>
       <div> Professional sounds recording for video, advertising, portfolio </div>
     </div>
     </div>
   </div>
 
-  <div class="section" id="portfolio">
+  <div class="section container" id="portfolio">
     <h2 class="section-title">portfolio</h2>
   </div>
-  <button>Winter</button>
-  <button>Spring</button>
-  <button>Summer</button>
-  <button>Autumn</button>
-
+  <button class="button-black">Winter</button>
+  <button class="button-black">Spring</button>
+  <button class="button-black">Summer</button>
+  <button class="button-gold">Autumn</button>
+  
   <img class="portfolio" src="./assets/img/portfolio-img.jpg" alt="portfolio-img">
   <img class="portfolio" src="./assets/img/portfolio-img-1.jpg" alt="portfolio-img-1">
   <img class="portfolio" src="./assets/img/portfolio-img-2.jpg" alt="portfolio-img-2">
@@ -81,54 +95,59 @@
   <img class="portfolio" src="./assets/img/portfolio-img-5.jpg" alt="portfolio-img-5">
 
 
-  <div class="section" id="video">
+  <div class="section container" id="video">
     <h2 class="section-title">video</h2>
+  </div class="vidio-player">
+  <img class="logo play" src="./assets/svg/Play_hover.svg" alt="play">
+  <img  src="./assets/img/video-player.jpg" alt="video-player">
   </div>
-  <img class="play" src="./assets/svg/Play_hover.svg" alt="play">
-  <img class="vidio-player" src="./assets/img/video-player.jpg" alt="video-player">
 
-  <div class="section" id="price">
+
+
+  <div class="section container" id="price">
     <h2 class="section-title">price</h2>
 
     <div class="price">
 <div>
 <div> Standard </div>
 <div>500$</div>
-<div>One location</div>
-<div>120 photos in color</div>
-<div>12 photos in retouch</div>
-<div>Readiness 2-3 weeks</div>
-<div>Make up, visage</div>
-<div>Order shooting</div>
-  </div>
+<span class="price-in">One location</span>
+<span class="price-in">120 photos in color</span>
+<span class="price-in">12 photos in retouch</span>
+<span class="price-in">Readiness 2-3 weeks</span>
+<span class="price-in">Make up, visage</span>
+<button class="button-gold">Order shooting</button>
+</div>
 
   <div>
     <div> Premium </div>
     <div>700$</div>
-    <div>One or two locations</div>
-    <div>200 photos in color</div>
-    <div>20 photos in retouch</div>
-    <div>Readiness 1-2 weeks</div>
-    <div>Make up, visage</div>
-    <div>Order shooting</div>
+    <span class="price-in">One or two locations</span>
+    <span class="price-in">200 photos in color</span>
+    <span class="price-in">20 photos in retouch</span>
+    <span class="price-in">Readiness 1-2 weeks</span>
+    <span class="price-in">Make up, visage</span>
+    <button class="button-gold">Order shooting</button>
       </div>
 
       <div>
         <div> Gold </div>
         <div>1000$</div>
-        <div>Three locations or more</div>
-        <div>300 photos in color</div>
-        <div>50 photos in retouch</div>
-        <div>Readiness 1 week</div>
-        <div>Make up, visage, hairstyle</div>
-        <div>Order shooting</div>
+        <span class="price-in">Three locations or more</span>
+        <span class="price-in">300 photos in color</span>
+        <span class="price-in">50 photos in retouch</span>
+        <span class="price-in">Readiness 1 week</span>
+        <span class="price-in">Make up, visage, hairstyle</span>
+        <button class="button-gold">Order shooting</button>
           </div>
 
 
   </div>
+</div>
 
-  <div class="section" id="contacts">
-    <h2 class="section-title">contacts</h2>
+  <div class="section container contacts" id="contacts">
+    <h2 class="section-title">Contact me</h2>
+    <button class="button-gold">Send message</button>
   </div>
 
 
@@ -140,18 +159,17 @@
   <div class="container">
     <div class="price">
      <div class="footer-data">
-      <div>©</div>
-      <div>2022</div>
-      <div>github</div>
+      <div>© 2022 github</div>
+      
       </div>
 
      <div>Rolling Scopes School</div>
 
       <div class="social-list">
-    <img class="pinterest 1" src="./assets/svg/pinterest 1.svg" alt="pinterest 1">
-    <img class="tw 1" src="./assets/svg/tw 1.svg" alt="tw 1">
-    <img class="fb 1" src="./assets/svg/fb 1.svg" alt="fb 1">
-    <img class="inst 1" src="./assets/svg/inst 1.svg" alt="inst 1">
+    <img class="logo" src="./assets/svg/pinterest 1.svg" alt="pinterest 1">
+    <img class="logo" src="./assets/svg/tw 1.svg" alt="tw 1">
+    <img class="logo" src="./assets/svg/fb 1.svg" alt="fb 1">
+    <img class="logo" src="./assets/svg/inst 1.svg" alt="inst 1">
 
       </div>
     </div>
