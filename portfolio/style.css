@@ -3,6 +3,7 @@ body {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
+   background: black;
  }
 
  @font-face {
@@ -40,6 +41,7 @@ body {
   background-repeat: no-repeat;  
   transition: 0.3s;
   margin-right: auto;
+  padding: 20px;
 }
 .logo:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
@@ -106,7 +108,7 @@ h1 {
   width:220px;
   background-color: #bdae82;
   transition: 0.3s;
-  font-family: inherit
+  font-family: 'inter'
   font-weight: 400px;
   font-style: normal;
   font-size: 20px;
@@ -124,7 +126,7 @@ h1 {
     width:220px;
     background-color: transparent;
     transition: 0.3s;
-    font-family: inherit;
+    font-family: 'inher';
     color: #bdae82;
     font-weight: 400px;
     font-style: normal;
@@ -140,7 +142,7 @@ h1 {
 }
  
 .section-title {
-font-family: Merriweather;
+font-family: 'Merriweather';
 font-size: 40px;
 font-style: normal;
 font-weight: 700;
@@ -215,8 +217,6 @@ padding-top: 100px;
   text-align: center;
   }
 
-
-
 .buttonPortfolio {
   display: flex;
   justify-content: center;
@@ -232,13 +232,6 @@ padding-top: 100px;
   margin-top: 60px;
 }
 
-
-
-
-
-
-
-
 .portfolio{
   display: flex;
   flex-wrap: wrap;
@@ -246,16 +239,32 @@ padding-top: 100px;
 }
 
 
+
 .video-player {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  }
 
 .play{
   position: absolute;
   display: flex;
+  }
+
+  .price-container {
+    width: 1440px;
+    height: 845px;  
+ }
+
+.price-card{
+  display: flex;
+  flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+  width: 450px;
+  height: 505px;
+  border: #bdae82 solid 1px;   
 }
 
 .price {
@@ -266,56 +275,153 @@ padding-top: 100px;
    margin-left: auto;
 }
 
+.price-top{
+  display: block;
+  color: white;
+  font-family: 'Merriweather';
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 56px;
+letter-spacing: 0em;
+text-align: center;
+}
+
+.price-cost{
+  display: block;
+  color: #bdae82;
+  font-family: 'Merriweather';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: center;  
+}
+
 .price-in{
   display: block;
   color: white;
+  font-family: 'Inter';
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: center;
 }
 
-
-
-.contacts {
+.contact-container {
   background-image: url("./assets/img/contacts.jpg");
-  background-position: center 0;
   background-repeat: no-repeat;
-  height: 700px;
-  
+  background-size: auto 700px;
+  background-position: center center;
+  width: 1440px;
+  height: 700px;  
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 450px;
+  height: 445px;
+  color: #bdae82;
+  padding-top: 60px;
+  padding-left: 970px;  
+}
+
+.section-title-contact {
+  font-family: 'Merriweather';
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 80px;
+letter-spacing: 0em;
+text-align: left; 
+}
+
+.input{
+  background: rgba( 0,0,0,.4);
+  border: 2px solid #BDAE82;
+    box-sizing: border-box;
+    width: 450px;
+    height: 50px;
+    padding-left: 20px;
+}
+input.input{
+  font-family: 'Inter';
+  color: white;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: left;
 }
 
 
-
-
-
-.footer {
-   background-color: black;
-   color: white;
-   height: 150px;
-   width: 1440px;
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   list-style: none;
-   margin-left: auto
-   
+.inputMessage{
+  background: rgba( 0,0,0,.4);
+  border: 2px solid #BDAE82;
+    box-sizing: border-box;
+    width: 450px;
+    height: 100px;
+    padding-left: 20px;
 }
+
+textarea.inputMessage{
+  font-family: 'Inter';
+  color: white;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+::placeholder {
+  font-family: 'inher';
+  color: #bdae82;
+  font-size: 20px;
+  font-style: normal;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+
 .footer-container {
+  background-position: center 0;
+  background-color: black;
+  color: white;
   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   list-style: none;
-   margin-left: auto
+ align-items: center;
+ width: 1440px;
+  height: 150px;
+  justify-content: space-between;
 }
 
-.video-player {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.play {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
- 
+.footer-text{
+  font-family: 'Inter';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+ }
+
+ a:hover {
+    text-decoration: none;
+    color: #bdae82;  
+    transition: 0.3s;
+  }
+
+  a {
+     color: inherit;
+     text-decoration: none;
+    } 
   
