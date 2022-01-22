@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>portfolio</title>
+   
    <link rel="stylesheet" href="style.css">
    <link rel="icon" href="assets/favicon.ico">
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +21,8 @@
 
 <header class="header">
   <div class="container header-container">
-      <img class="logo" src="./assets/svg/logo.svg" alt="logo">
-      <nav class="nav">
+       <img class="logo" src="./assets/svg/logo.svg" alt="logo">
+        <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item"><a href="#skills" class="nav-link">Skills </a></li>
           <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio </a></li>
@@ -30,7 +31,23 @@
           <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li> 
         </ul>
       </nav>
-      <img src="./assets/svg/switch-lng.svg" alt="switch-lng" id="logo">
+      <div class="nlg-btn">en</div> <div class="nlg-btn">/</div> <div class="nlg-btn">ru</div>
+      <div class="hamburger">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
+      <div class="small-nav">
+        <ul class="small-nav-list">
+          <li class="link"><a href="#skills" class="link">Skills </a></li>
+          <li class="link"><a href="#portfolio" class="link">Portfolio </a></li>
+          <li class="link"><a href="#video" class="link">Video </a></li>
+          <li class="link"><a href="#price" class="link">Price </a></li>
+          <li class="link"><a href="#contacts" class="link">Contacts</a></li> 
+        </ul>
+      </div>
+
+
     </div>
   </header>
 
@@ -42,69 +59,66 @@
 
      <h1>Alexa Rise</h1>
     <div class="hero-text"> Save sincere emotions, romantic feelings and happy moments of life together
-   with professional photographer Alexa Rise
-  </div>
+   with professional photographer Alexa Rise </div>
 
   <button class="button-gold">Hire me</button>
 
  </div>
 </section>
 
-  <section class="container" id="skills">
+  <section class="container skills-cont" id="skills">
       <h2 class="section-title">Skills</h2>
         <div class="skills-item">
 
            <div class="skill-item skill-item1">
                 <div class="skill-top"> Digital photography </div>
-                <div class="skill-text"> High-quality photos in the studio <br> on the nature </div>
+                <div class="skill-text"> High-quality photos in the studio on the nature </div>
            </div>
                   
            <div class="skill-item skill-item2">
                <div class="skill-top"> Video shooting </div>
-               <div class="skill-text"> Capture your moments so that <br> they always stay with you </div>
+               <div class="skill-text"> Capture your moments so that they always stay with you </div>
            </div>
 
            <div class="skill-item skill-item3">
                <div class="skill-top"> Retouch </div>
-               <div class="skill-text"> I strive to make photography <br> surpass reality </div>
+               <div class="skill-text"> I strive to make photography surpass reality </div>
            </div>
 
              <div class="skill-item skill-item4">
               <div class="skill-top"> Audio </div>
-              <div class="skill-text"> Professional sounds recording <br> for video, advertising, portfolio </div>
+              <div class="skill-text"> Professional sounds recording for video, advertising, portfolio </div>
              </div>
          </div>
    </section> 
   
 
-  <section class="container" id="portfolio">
+  <section class="container portfolio-cont" id="portfolio">
      <h2 class="section-title">Portfolio</h2>
          <div class="buttonPortfolio">
              <button class="button-black">Winter</button>
              <button class="button-black">Spring</button>
              <button class="button-black">Summer</button>
-            <button class="button-black">Autumn</button>
+            <button class="button-gold">Autumn</button>
           </div>
        <div class="imgPortfolio">
          <img class="portfolio" src="./assets/img/portfolio-img.jpg" alt="portfolio-img">
          <img class="portfolio" src="./assets/img/portfolio-img-1.jpg" alt="portfolio-img-1">
-          <img class="portfolio" src="./assets/img/portfolio-img-2.jpg" alt="portfolio-img-2">
+         <img class="portfolio" src="./assets/img/portfolio-img-2.jpg" alt="portfolio-img-2">
          <img class="portfolio" src="./assets/img/portfolio-img-3.jpg" alt="portfolio-img-3">
          <img class="portfolio" src="./assets/img/portfolio-img-4.jpg" alt="portfolio-img-4">
          <img class="portfolio" src="./assets/img/portfolio-img-5.jpg" alt="portfolio-img-5">
        </div>
 </section>
 
-<section class="container" id="video">
+<section class="container video-cont" id="video">
     <h2 class="section-title">Video</h2>
           <div class="video-player">
              <img class="logo play" src="./assets/svg/Play_hover.svg" alt="play">
-             <img src="./assets/img/video-player.jpg" alt="video-player">
+             <!-- <img src="./assets/img/video-player.jpg" alt="video-player"> -->
           </div>
                    
 </section>
-
-
 
   <section class="container price-container" id="price">
 
@@ -146,21 +160,20 @@
     </div>
   </section>
 </main>
-<footer class="container footer-container">
-      <div class="footer-text">© 2022 <a href="https://github.com/feerbax56">github</a></div>
+<footer class="footer-container container">
+        <div class="footer-text">© 2022 <a href="https://github.com/feerbax56">&nbsp; github &nbsp;</a></div>
       <div class="footer-text"><a href="https://rs.school/js-stage0/">Rolling Scopes School</a></div>
 
-      <div class="social-list">
-        <ul class="nav nav-list">
-          <li class="nav-item"><img class="logo" src="./assets/svg/pinterest_1.svg" alt="pinterest_1"></li>
-          <li class="nav-item"><img class="logo" src="./assets/svg/tw_1.svg" alt="tw_1"></li>
-          <li class="nav-item"><img class="logo" src="./assets/svg/fb_1.svg" alt="fb_1"></li>
-          <li class="nav-item"><img class="logo" src="./assets/svg/inst_1.svg" alt="inst_1"></li>
-        </ul>  
-       
-       </div>
-</footer>
+      <div >
+      <ul class="social-list">
+        <li class="nav-item"><a href="https://www.instagram.com/"><img class="logo-s" src="./assets/svg/inst_1.svg" alt="inst_1"></a></li>
+        <li class="nav-item"><a href="https://ru-ru.facebook.com/"><img class="logo-s" src="./assets/svg/fb_1.svg" alt="fb_1"></a></li>
+        <li class="nav-item"><a href="https://twitter.com/"><img class="logo-s" src="./assets/svg/tw_1.svg" alt="tw_1"></a></li>
+        <li class="nav-item"><a href="https://www.pinterest.ru/"><img class="logo-s" src="./assets/svg/pinterest_1.svg" alt="pinterest_1"></a></li>
+      </ul>  
+     </div>
+   </footer>
 
-  <!-- <link rel="js" href="index.js">  -->
+<script src="index.js"></script> 
 </body>
 </html>
