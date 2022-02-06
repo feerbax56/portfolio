@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>portfolio</title>
+   <title>custom-video</title>
    
    <link rel="stylesheet" href="style.css">
    <link rel="icon" href="assets/favicon.ico">
@@ -122,8 +122,24 @@
 
 <section class="container video-cont ligth" id="video">
     <h2 class="section-title ligth" data-i18n="video">Video</h2>
+
           <div class="video-player">
-             <img class="logo play" src="./assets/svg/Play_hover.svg" alt="play">
+            
+            <video class="player__video viewer" src="./assets/video/video.mp4" ></video>
+             <div class="play-btn"></div>
+              
+             <div class="player__controls play">
+              <div class="progress">
+               <div class="progress__filled"></div>
+              </div>
+              <button class="player__button toggle play-icon play" title="Toggle Play"></button>
+              <div class="play-icon volume-icon"></div>
+              <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+              <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+              <button data-skip="-10" class="player__button">« 10s</button>
+              <button data-skip="25" class="player__button">25s »</button>
+             </div>
+
            </div>
 </section>
 <!-- 
@@ -177,18 +193,23 @@
   </section>
 </main> -->
 
-<footer class="footer-container container">
-        <div class="footer-text">© 2022 <a href="https://github.com/feerbax56">&nbsp; github &nbsp;</a></div>
-      <div class="footer-text"><a href="https://rs.school/js-stage0/">Rolling Scopes School</a></div>
-
+<footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-data">
+      <p class="copyright">©</p>
+      <p class="year">2022</p>
+      <a class="github-username" href="https://github.com/feerbax56" target="_blank" rel="noopener noreferrer">github</a>
+    </div>
+    <a href="https://rs.school/js-stage0/" class="rss"> Rolling Scopes School </a>
       <!-- <div >
-      <ul class="social-list">
+              <ul class="social-list">
         <li class="nav-item"><a href="https://www.instagram.com/"><img class="logo-s" src="./assets/svg/inst_1.svg" alt="inst_1"></a></li>
         <li class="nav-item"><a href="https://ru-ru.facebook.com/"><img class="logo-s" src="./assets/svg/fb_1.svg" alt="fb_1"></a></li>
         <li class="nav-item"><a href="https://twitter.com/"><img class="logo-s" src="./assets/svg/tw_1.svg" alt="tw_1"></a></li>
         <li class="nav-item"><a href="https://www.pinterest.ru/"><img class="logo-s" src="./assets/svg/pinterest_1.svg" alt="pinterest_1"></a></li>
       </ul>  
      </div> -->
+     </div>
    </footer>
 
 <script type="module" src="index.js"></script> 
